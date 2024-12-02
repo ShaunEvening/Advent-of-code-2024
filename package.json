@@ -1,0 +1,22 @@
+{
+  "name": "avent-of-code-2024",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "day": "tsx",
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "keywords": [],
+  "author": "Shaun Evening",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "@vitest/coverage-v8": "^2.1.6",
+    "prettier": "^3.4.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.6"
+  }
+}
