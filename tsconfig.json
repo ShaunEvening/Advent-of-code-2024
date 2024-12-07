@@ -3,12 +3,16 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
-    "module": "CommonJS",
+    "module": "ESNext",
     "moduleResolution": "node",
     "noImplicitAny": true,
     "rootDir": "./",
     "skipLibCheck": true,
     "strict": true,
-    "target": "ESNext"
+    "target": "ESNext",
+    "baseUrl": "./",
+    "paths": {
+      "@common/*": ["src/common/*"]
+    }
   }
 }
