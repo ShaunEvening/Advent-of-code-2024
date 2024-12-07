@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "day": "tsx",
-    "test": "vitest",
-    "test:coverage": "vitest run --coverage"
+    "generate": "NODE_OPTIONS='--import tsx' plop --plopfile=plop/plopfile.ts",
+    "test:coverage": "vitest run --coverage",
+    "test": "vitest"
   },
   "keywords": [],
   "author": "Shaun Evening",
@@ -14,9 +15,15 @@
   "devDependencies": {
     "@types/node": "^22.10.1",
     "@vitest/coverage-v8": "^2.1.6",
+    "plop": "^4.0.1",
     "prettier": "^3.4.1",
     "tsx": "^4.19.2",
     "typescript": "^5.7.2",
     "vitest": "^2.1.6"
+  },
+  "dependencies": {
+    "boxen": "^8.0.1",
+    "chalk": "^5.3.0",
+    "dedent": "^1.5.3"
   }
 }
