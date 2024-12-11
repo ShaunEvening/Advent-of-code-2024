@@ -1,6 +1,8 @@
 import { defineConfig } from 'vitest/config';
+import tsPathsPlugin from 'vite-tsconfig-paths';
 
 export default defineConfig({
+  plugins: [tsPathsPlugin()],
   test: {
     coverage: {
       provider: 'v8',
